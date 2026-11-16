@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1057" width="605" height="761" font-family="'Times New Roman', Times, serif">
+<style>
+.t { font-size: 15.5px; fill: #111; } .s { font-size: 12.5px; fill: #222; }
+.lab { font-size: 15.5px; fill: #111; } .side { font-size: 15.5px; fill: #111; font-style: italic; }
+.head { font-size: 16.5px; fill: #111; font-weight: bold; }
+.ln { fill: none; stroke: #222; stroke-width: 1.3; stroke-linejoin: round; } .dash { stroke-dasharray: 6 4; }
+</style>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker></defs>
+<rect width="840" height="1057" fill="#ffffff"/>
+<text x="570" y="18" text-anchor="middle" class="lab">Вероятности</text>
+<text x="570" y="36" text-anchor="middle" class="lab">следующего токена</text>
+<rect x="475.0" y="62" width="190" height="28" rx="6" fill="#cfe9d2" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="81.0" text-anchor="middle" class="t">Softmax</text>
+<rect x="475.0" y="106" width="190" height="42" rx="6" fill="#dcdcf2" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="123.8" text-anchor="middle" class="t">Выходной слой</text>
+<text x="570" y="140.2" text-anchor="middle" class="s">1536 → 151 936</text>
+<rect x="475.0" y="164" width="190" height="26" rx="6" fill="#f4f4c6" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="182.0" text-anchor="middle" class="t">Нормализация</text>
+<rect x="435" y="208" width="270" height="290" rx="9" fill="#f2f2f2" stroke="#444" stroke-width="1"/>
+<rect x="475.0" y="442" width="190" height="26" rx="6" fill="#f4f4c6" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="460.0" text-anchor="middle" class="t">Нормализация</text>
+<rect x="475.0" y="380" width="190" height="46" rx="6" fill="#fde2bd" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="399.8" text-anchor="middle" class="t">Masked self-attention</text>
+<text x="570" y="416.2" text-anchor="middle" class="s">12 голов</text>
+<rect x="475.0" y="302" width="190" height="26" rx="6" fill="#f4f4c6" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="320.0" text-anchor="middle" class="t">Нормализация</text>
+<rect x="475.0" y="240" width="190" height="46" rx="6" fill="#c8e7f7" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="259.8" text-anchor="middle" class="t">Полносвязный блок</text>
+<text x="570" y="276.2" text-anchor="middle" class="s">1536 → 8960 → 1536</text>
+<path d="M570,442 L570,426" class="ln" marker-end="url(#a)"/>
+<path d="M570,380 L570,368" class="ln" marker-end="url(#a)"/>
+<path d="M570,352 L570,328" class="ln" marker-end="url(#a)"/>
+<path d="M570,302 L570,286" class="ln" marker-end="url(#a)"/>
+<path d="M570,240 L570,230" class="ln" marker-end="url(#a)"/>
+<path d="M570,484 L455,484 L455,360 L562,360" class="ln" marker-end="url(#a)"/>
+<path d="M570,342 L455,342 L455,222 L562,222" class="ln" marker-end="url(#a)"/>
+<circle cx="570" cy="360" r="8" fill="#fff" stroke="#222" stroke-width="1.1"/><path d="M564.5,360 L575.5,360 M570,354.5 L570,365.5" stroke="#222" stroke-width="1.1"/>
+<circle cx="570" cy="222" r="8" fill="#fff" stroke="#222" stroke-width="1.1"/><path d="M564.5,222 L575.5,222 M570,216.5 L570,227.5" stroke="#222" stroke-width="1.1"/>
+<path d="M570,214 L570,190" class="ln" marker-end="url(#a)"/>
+<path d="M570,164 L570,148" class="ln" marker-end="url(#a)"/>
+<path d="M570,106 L570,90" class="ln" marker-end="url(#a)"/>
+<path d="M570,62 L570,44" class="ln" marker-end="url(#a)"/>
+<rect x="435.0" y="520" width="270" height="42" rx="6" fill="#ffffff" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="537.8" text-anchor="middle" class="t">Одна последовательность</text>
+<text x="570" y="554.2" text-anchor="middle" class="s">225 визуальных + 35 текстовых токенов</text>
+<path d="M570,520 L570,468" class="ln" marker-end="url(#a)"/>
+<rect x="475.0" y="586" width="190" height="40" rx="6" fill="#f9d9dc" stroke="#444" stroke-width="0.9"/>
+<text x="570" y="611.0" text-anchor="middle" class="t">Эмбеддинги токенов</text>
+<path d="M570,586 L570,562" class="ln" marker-end="url(#a)"/>
+<text x="570" y="664" text-anchor="middle" class="lab">Инструкция</text>
+<text x="570" y="682" text-anchor="middle" class="lab">около 35 токенов</text>
+<path d="M570,648 L570,626" class="ln" marker-end="url(#a)"/>
+<text x="752" y="328" text-anchor="middle" class="side">28×</text>
+<text x="752" y="346" text-anchor="middle" class="side">слой</text>
+<text x="752" y="364" text-anchor="middle" class="side">языковой</text>
+<text x="752" y="382" text-anchor="middle" class="side">модели</text>
+<path d="M665.0,76 L806,76 L806,606 L665.0,606" class="ln dash" marker-end="url(#a)"/>
+<text transform="translate(823,341.0) rotate(-90)" text-anchor="middle" class="s">выбранный токен возвращается на вход, по одному за шаг</text>
+<rect x="140.0" y="567" width="170" height="42" rx="6" fill="#dcdcf2" stroke="#444" stroke-width="0.9"/>
+<text x="225" y="584.8" text-anchor="middle" class="t">Сжатие 2×2</text>
+<text x="225" y="601.2" text-anchor="middle" class="s">900 → 225 токенов</text>
+<path d="M225,567 L225,541 L435,541" class="ln" marker-end="url(#a)"/>
+<rect x="105" y="631" width="240" height="290" rx="9" fill="#f2f2f2" stroke="#444" stroke-width="1"/>
+<rect x="140.0" y="865" width="170" height="26" rx="6" fill="#f4f4c6" stroke="#444" stroke-width="0.9"/>
+<text x="225" y="883.0" text-anchor="middle" class="t">Нормализация</text>
+<rect x="140.0" y="803" width="170" height="46" rx="6" fill="#fde2bd" stroke="#444" stroke-width="0.9"/>
+<text x="225" y="822.8" text-anchor="middle" class="t">Self-attention</text>
+<text x="225" y="839.2" text-anchor="middle" class="s">16 голов</text>
+<rect x="140.0" y="725" width="170" height="26" rx="6" fill="#f4f4c6" stroke="#444" stroke-width="0.9"/>
+<text x="225" y="743.0" text-anchor="middle" class="t">Нормализация</text>
+<rect x="140.0" y="663" width="170" height="46" rx="6" fill="#c8e7f7" stroke="#444" stroke-width="0.9"/>
+<text x="225" y="682.8" text-anchor="middle" class="t">Полносвязный блок</text>
+<text x="225" y="699.2" text-anchor="middle" class="s">1280 → 5120 → 1280</text>
+<path d="M225,865 L225,849" class="ln" marker-end="url(#a)"/>
+<path d="M225,803 L225,791" class="ln" marker-end="url(#a)"/>
+<path d="M225,775 L225,751" class="ln" marker-end="url(#a)"/>
+<path d="M225,725 L225,709" class="ln" marker-end="url(#a)"/>
+<path d="M225,663 L225,653" class="ln" marker-end="url(#a)"/>
+<path d="M225,907 L124,907 L124,783 L217,783" class="ln" marker-end="url(#a)"/>
+<path d="M225,765 L124,765 L124,645 L217,645" class="ln" marker-end="url(#a)"/>
+<circle cx="225" cy="783" r="8" fill="#fff" stroke="#222" stroke-width="1.1"/><path d="M219.5,783 L230.5,783 M225,777.5 L225,788.5" stroke="#222" stroke-width="1.1"/>
+<circle cx="225" cy="645" r="8" fill="#fff" stroke="#222" stroke-width="1.1"/><path d="M219.5,645 L230.5,645 M225,639.5 L225,650.5" stroke="#222" stroke-width="1.1"/>
+<path d="M225,637 L225,609" class="ln" marker-end="url(#a)"/>
+<rect x="140.0" y="943" width="170" height="42" rx="6" fill="#f9d9dc" stroke="#444" stroke-width="0.9"/>
+<text x="225" y="960.8" text-anchor="middle" class="t">Нарезка на патчи</text>
+<text x="225" y="977.2" text-anchor="middle" class="s">14×14, всего 900</text>
+<path d="M225,943 L225,891" class="ln" marker-end="url(#a)"/>
+<text x="225" y="1023" text-anchor="middle" class="lab">Фрагмент заметки</text>
+<text x="225" y="1041" text-anchor="middle" class="lab">1260×140 пикселей</text>
+<path d="M225,1007 L225,985" class="ln" marker-end="url(#a)"/>
+<text x="52" y="761" text-anchor="middle" class="side">32×</text>
+<text x="52" y="779" text-anchor="middle" class="side">слой</text>
+<text x="52" y="797" text-anchor="middle" class="side">энкодера</text>
+<text x="225" y="507" text-anchor="middle" class="head">Визуальный энкодер</text>
+<text x="570" y="726" text-anchor="middle" class="head">Языковая модель</text>
+</svg>
